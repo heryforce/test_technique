@@ -8,6 +8,7 @@ Docker & Docker Compose
 
 Steps to run the project :
 - clone the project
+- cd to the project
 - run composer install to install the dependencies
 - run `php bin/console sql-migrations:execute --drop-database` to create the database and run the migrations
 - run `bin/console app:import:csv <path/to/your/csv/file.csv>` to import the data to the database
