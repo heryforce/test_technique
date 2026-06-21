@@ -1,0 +1,1 @@
+CREATE TABLE contact (id int PRIMARY KEY NOT NULL, insee VARCHAR (255), telephone VARCHAR(255));
