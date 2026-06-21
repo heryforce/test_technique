@@ -5,7 +5,7 @@ namespace App\Service\Message;
 use Symfony\Component\Messenger\Attribute\AsMessage;
 
 #[AsMessage('async')]
-class SmsService
+class AlertMessage
 {
     public function __construct(
         private string $content,
