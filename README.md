@@ -9,6 +9,7 @@ Docker & Docker Compose
 Steps to run the project :
 - clone the project
 - cd to the project
+- run docker compose up -d to start the postgresql container
 - run composer install to install the dependencies
 - run `php bin/console sql-migrations:execute --drop-database` to create the database and run the migrations
 - run `bin/console app:import:csv <path/to/your/csv/file.csv>` to import the data to the database. A csv file named insee_telephone.csv is already in the root dir if you do not have one.
