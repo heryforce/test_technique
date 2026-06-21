@@ -16,4 +16,10 @@ Steps to run the project :
 - run `bin/console messenger:consume -vv` to start the messenger (the `-vv` option is to see the messages being consumed in real time)
 - assuming the web server started on `localhost:8000`, go to `localhost:8000/api/alerter` with the parameters `insee` and `key`. Example : `localhost:8000/api/alerter?insee=75056&key=YOUR_API_KEY`
 - the app returns a 200 code if everything is ok
-- the api key must be in your .env file
+- the api key is in the `API_KEY` key in the .env file.
+- the database config is in the `DATABASE_URL` key in the .env file :
+    - user : root
+    - password : root
+    - database name : test_technique
+    - host : 127.0.0.1
+    - port : 5432
