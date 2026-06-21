@@ -24,3 +24,4 @@ Steps to run the project :
     - database name : test_technique
     - host : 127.0.0.1
     - port : 5432
+- logs are stored in the var/log/<your_app_env>/custom.log file
