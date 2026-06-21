@@ -1,9 +1,9 @@
 ## Interview project
 
 Prerequisites : 
-PHP 8.5 with the pdo_pgsql extension enabled
-Composer
-The Symfony CLI
+PHP 8.5 with the pdo_pgsql extension enabled\
+Composer\
+The Symfony CLI\
 Docker & Docker Compose
 
 Steps to run the project :
