@@ -115,7 +115,10 @@ class ImportCsvCommand extends Command
                 $nbErrors++;
             }
         }
-        $this->connection->executeStatement(implode(";", $sqlInsert));
+        foreach ($sqlInsert as $query) {
+            $stmt = $this->connection->prepare($query);
+            $stmt->executeStatement();
+        }
         $nbInsertedLines = count($sqlInsert);
         $this->customLogger->notice("End of process. Number of lines inserted : $nbInsertedLines. Number of errors : $nbErrors");
         $io->success("Done. Number of lines inserted : $nbInsertedLines. Number of errors : $nbErrors");
